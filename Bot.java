@@ -2,7 +2,7 @@
 
 public class Bot extends Player {
 
-public static String bottext(String c1){
+public static String bottext(String c1){ // Shows the chat choises the bot makes with the players choises.
 
         switch(c1){
             case "A": System.out.println("Hello I see you are a new player, are you ready to play?");
@@ -22,7 +22,7 @@ public static String bottext(String c1){
             default:  System.out.println("");
                     break;
         }
-        return c1;            
+        return c1;    // returnes the choise of the bot        
     }
     
 

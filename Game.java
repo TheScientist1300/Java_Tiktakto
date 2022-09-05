@@ -11,6 +11,8 @@ public class Game extends Bot {
         int counter = 0;
         int symbol;
 
+        Bot bot = new Bot();
+
         while (flag){
             System.out.println(board); // print the board
             // set turn

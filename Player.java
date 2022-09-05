@@ -5,18 +5,18 @@ import java.util.Scanner;
  * 
 */
 public class Player  {
-    Scanner scanner;
-    public static String name;
+    Scanner scanner; // creates a Scanner
+    public static String name; // Creates a public String name
 
     public Player() {
-        this.name = getUserInput(3);
+        this.name = getUserInput(3); // gets the name of the player
     }
 
     public Player(String name) {
-        this.name = name;
+        this.name = name; // sets the name of the player
     }
 
-    public String getUserInput(int c) {
+    public String getUserInput(int c) { // makes the scanner standable aginst null answers and creates the Scanner
         prompt(c);
         scanner = new Scanner(System.in);
         if(scanner != null){
@@ -29,7 +29,7 @@ public class Player  {
 
 
 
-    public void prompt(int c){
+    public void prompt(int c){ // creates the narroators choises of senteses
         switch(c){
             case 1: System.out.println("Player " + name + ": Enter a row number: ");
                     break;
@@ -47,7 +47,7 @@ public class Player  {
 
     }
 
-    public void PlayerIntreduction(int intreduction){
+    public void PlayerIntreduction(int intreduction){ // creates the players choises of senteses in the intreduction
         switch(intreduction){
             case 1: System.out.println("You will see...");
                     break;
@@ -65,7 +65,7 @@ public class Player  {
 
     }
 
-    public void Beatfrase(int beat){
+    public void Beatfrase(int beat){ // creates the narroators choises of senteses in case of the player's defeat
         switch(beat){
             case 1: System.out.println("Maybe I didn't win that game but in the next one I will win for sure");
                     break;
@@ -82,16 +82,20 @@ public class Player  {
         
 
     }
-    public int Winfrase(int win){
+    public int Winfrase(int win){ // creates the narroators choises of senteses in case of the player's victory
         switch(win){
             case 1:
-           String filthy = "Ha! seems like I won";
+            System.out.println("Ha! seems like I won");
+            break;
             case 2:
-           String respect = "GG nice try";
+            System.out.println("GG nice try");
+           break;
             case 3:
-           String between =  "Maybe next time";
+            System.out.println("Maybe next time");
+           break;
             default:
-            String nocomment = "";
+            System.out.println("");
+            break;
 
 
         }   
@@ -99,7 +103,7 @@ public class Player  {
 
     }
     
-    public void Tiefrase(int tie){
+    public void Tiefrase(int tie){ // creates the narroators choises of senteses in case of a tie
         switch(tie){
             case 1: System.out.println("I have all of the time in the world");
                     break;
