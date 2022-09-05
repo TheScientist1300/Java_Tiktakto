@@ -1,4 +1,4 @@
-public class Game {
+public class Game extends Bot {
     private Board board;
     private Player player;
     public static void main(String[] args) {
