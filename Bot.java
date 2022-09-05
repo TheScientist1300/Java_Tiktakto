@@ -1,25 +1,29 @@
-import java.lang.invoke.StringConcatException;
+
 
 public class Bot extends Player {
-    public String Botcatchfrase(String name){
-       String frase = null;
-        switch(frase){
-            case 1: return("Hello" + name + "I see you are a new player" + ", are you ready to play?");
+
+public static String bottext(String c1){
+
+        switch(c1){
+            case "A": System.out.println("Hello I see you are a new player, are you ready to play?");
                     break;
-            case 2: return("Ha! It seems like you have nothing to do aginst me!");
+            case "B": System.out.println("Ha! It seems like you have nothing to do aginst me!");
                     break;
-            case 3: return("What?! How did you do that?! I want a VAR test!");
+            case "C": System.out.println("What?! How did you do that?! I want a VAR test!");
                     break;
-            case 4: return("I can do this all day");
+            case "D": System.out.println("I can do this all day");
                     break;
-            case 5: return("Maybe next time");
+            case "E": System.out.println("Maybe next time");
                     break;
-            case 6: return("Maybe you won this time but it won't be long till I get the next one!");
+            case "F": System.out.println("Maybe you won this time but it won't be long till I get the next one!");
                     break;
-            case 7: return("We will see...");   
-                    break;     
-            default: return("");
+            case "G": System.out.println("We will see...");
+                    break;       
+            default:  System.out.println("");
+                    break;
         }
-            
+        return c1;            
     }
-}
+    
+
+        }

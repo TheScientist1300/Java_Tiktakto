@@ -4,9 +4,9 @@ import java.util.Scanner;
  *TODO:  
  * 
 */
-public class Player {
+public class Player  {
     Scanner scanner;
-    public String name;
+    public static String name;
 
     public Player() {
         this.name = getUserInput(3);
@@ -105,7 +105,7 @@ public class Player {
                     break;
             case 2: System.out.println("GG well played");
                     break;
-            case 3: System.out.println("I'm out of here! I'm going to Netflix");
+            case 3: System.out.println("I'm out of here! I'm going to watch Netflix");
                     break;        
             default: System.out.println("");
                     break;
