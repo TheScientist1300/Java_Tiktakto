@@ -11,8 +11,17 @@ public class Board{
         }
     }
 
-    public void setCoordinate(int x, int y, int value){
+    public boolean setCoordinate(int x, int y, int value){
+    if(!(this.board[x][y] == 0)) {
         this.board[x][y] = value;
+    return true;
+    }
+    else {
+        return false;
+ 
+    }
+
+
     }
     
 

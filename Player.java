@@ -4,16 +4,16 @@ import java.util.Scanner;
  *TODO:  
  * 
 */
-public class Player  {
-    Scanner scanner; // creates a Scanner
+public class Player {
+   public Scanner scanner; // creates a Scanner
     public static String name; // Creates a public String name
 
     public Player() {
-        this.name = getUserInput(3); // gets the name of the player
+        Player.name = getUserInput(3); // gets the name of the player
     }
 
     public Player(String name) {
-        this.name = name; // sets the name of the player
+        Player.name = name; // sets the name of the player
     }
 
     public String getUserInput(int c) { // makes the scanner standable aginst null answers and creates the Scanner
@@ -47,7 +47,7 @@ public class Player  {
 
     }
 
-    public void PlayerIntreduction(int intreduction){ // creates the players choises of senteses in the intreduction
+    public int PlayerIntreduction(int intreduction){ // creates the players choises of senteses in the intreduction
         switch(intreduction){
             case 1: System.out.println("You will see...");
                     break;
@@ -60,12 +60,12 @@ public class Player  {
 
 
         }
-            
+            return intreduction;
         
 
     }
 
-    public void Beatfrase(int beat){ // creates the narroators choises of senteses in case of the player's defeat
+    public int Beatfrase(int beat){ // creates the narroators choises of senteses in case of the player's defeat
         switch(beat){
             case 1: System.out.println("Maybe I didn't win that game but in the next one I will win for sure");
                     break;
@@ -79,7 +79,7 @@ public class Player  {
 
 
         }
-        
+        return beat;
 
     }
     public int Winfrase(int win){ // creates the narroators choises of senteses in case of the player's victory
@@ -103,7 +103,7 @@ public class Player  {
 
     }
     
-    public void Tiefrase(int tie){ // creates the narroators choises of senteses in case of a tie
+    public int Tiefrase(int tie){ // creates the narroators choises of senteses in case of a tie
         switch(tie){
             case 1: System.out.println("I have all of the time in the world");
                     break;
@@ -116,7 +116,7 @@ public class Player  {
 
 
         }
-        
+        return tie;
 
     }
 }

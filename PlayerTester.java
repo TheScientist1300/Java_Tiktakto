@@ -1,3 +1,5 @@
-public class PlayerTester {
-    
-}
+public abstract class PlayerTester {
+
+
+        }
+
