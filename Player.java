@@ -5,7 +5,7 @@ import java.util.Scanner;
  * 
 */
 public class Player {
-   public Scanner scanner; // creates a Scanner
+   public  Scanner scanner; // creates a Scanner
     public static String name; // Creates a public String name
 
     public Player() {
@@ -48,7 +48,7 @@ public class Player {
     }
 
     public int PlayerIntreduction(int intreduction){ // creates the players choises of senteses in the intreduction
-        switch(intreduction){
+        switch(intreduction){ 
             case 1: System.out.println("You will see...");
                     break;
             case 2: System.out.println("Yes");

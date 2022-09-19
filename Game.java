@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Game extends Player {
     public Game(String name) {
         super(name);
@@ -46,28 +48,52 @@ public class Game extends Player {
             int brow = Bot.setturn(2);
             board.setCoordinate(bcolnum, brow, symbol);
 
-            int intreduction1 = player.PlayerIntreduction(1);
-            int intreduction2 = player.PlayerIntreduction(2);
-            int intreduction3 = player.PlayerIntreduction(3);
 
-            int Beatfrase1 = player.Beatfrase(1);
-            int Beatfrase2 = player.Beatfrase(2);
-            int Beatfrase3 = player.Beatfrase(3);
-
-            int Winfrase1 = player.Winfrase(1);
-            int Winfrase2 = player.Winfrase(2);
-            int Winfrase3 = player.Winfrase(3);
-
-            int bottext1 = Bot.bottext(1);
-            int bottext2 = Bot.bottext(2);
-            int bottext3 = Bot.bottext(3);
-            int bottext4 = Bot.bottext(4);
-            int bottext5 = Bot.bottext(5);
-            int bottext6 = Bot.bottext(6);
-        }
-        
         board.setCoordinate(1, 1, 1);
         System.out.println(board);
 
+
+            }
+
+
+  
+        }
+
+    int intreduction1 = player.PlayerIntreduction(1);
+    int intreduction2 = player.PlayerIntreduction(2);
+    int intreduction3 = player.PlayerIntreduction(3);
+
+    int Beatfrase1 = player.Beatfrase(1);
+    int Beatfrase2 = player.Beatfrase(2);
+    int Beatfrase3 = player.Beatfrase(3);
+
+    int Winfrase1 = player.Winfrase(1);
+    int Winfrase2 = player.Winfrase(2);
+    int Winfrase3 = player.Winfrase(3);
+
+    int Tiefrase1 = player.Tiefrase(1);
+    int Tiefrase2 = player.Tiefrase(2);
+    int Tiefrase3 = player.Tiefrase(3);
+
+    int bottext1 = Bot.bottext(1);
+    int bottext2 = Bot.bottext(2);
+    int bottext3 = Bot.bottext(3);
+    int bottext4 = Bot.bottext(4);
+    int bottext5 = Bot.bottext(5);
+    int bottext6 = Bot.bottext(6);
+    int bottext7 = Bot.bottext(7);
+        
+
+public static void chatindroduction(int intreduction1, int intreduction2, int intreduction3, int bottext1, int bottext2, int bottext3) {
+       Scanner s1 = new Scanner(System.in);
+
+}
+    public static void chatwin(int Winfrase1, int Winfrase2, int Winfrase3, int bottext5, int bottext6, int bottext7) {
+
+    }
+
+    public static void chatdraw(int Tiefrase1, int Tiefrase2, int Tiefrase3, int bottext4) {
+
     }
 }
+

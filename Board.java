@@ -11,18 +11,26 @@ public class Board{
         }
     }
 
-    public boolean setCoordinate(int x, int y, int value){
-    if(!(this.board[x][y] == 0)) {
-        this.board[x][y] = value;
-    return true;
-    }
-    else {
-        return false;
- 
+    public boolean isavalable(int x, int y, int value){
+        this.board[x][y] = 0;
+        if (this.board[x][y] == 0) {
+        System.out.println("You can't put an X there because the spot is already taken.");
+        return true;
+         }
+         else {
+            return false;
+         }
     }
 
+    public void setCoordinate(int x, int y, int value){
+        if (isavalable(x, y, value)) {
+            this.board[x][y] = value;
+        }
+        else {
+            setCoordinate (x,y, value);
+        }
+  }
 
-    }
     
 
 
