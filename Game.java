@@ -24,7 +24,7 @@ public class Game extends Player {
             symbol = 1;
             if(counter % 2 != 0)
                 symbol = 1;
-            else {
+            else if (counter % 2 != 1) {
                 symbol = 2;
             }    
 
@@ -42,7 +42,7 @@ public class Game extends Player {
             int colInt = Integer.parseInt(col); // convert col to int
             board.setCoordinate(rowInt, colInt, symbol); // set the coordinate to the board
 
-            int botrow = bot.auto(1);
+            int botrow = bot.getbotrInput();
             int botcol = bot.auto(2);
             int bcolnum = Bot.setturn(2);
             int brow = Bot.setturn(2);
@@ -89,11 +89,13 @@ public static void chatindroduction(int intreduction1, int intreduction2, int in
 
 }
     public static void chatwin(int Winfrase1, int Winfrase2, int Winfrase3, int bottext5, int bottext6, int bottext7) {
+        Scanner s2 = new Scanner(System.in);
 
     }
 
     public static void chatdraw(int Tiefrase1, int Tiefrase2, int Tiefrase3, int bottext4) {
-
+        Scanner s3 = new Scanner(System.in);
+    
     }
 }
 

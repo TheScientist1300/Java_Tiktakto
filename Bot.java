@@ -49,17 +49,31 @@ public int auto(int i){ // creates the narroators choises of senteses
 
     }   
 
-public static int setrow(Random r) {
+    public int getbotrInput(int row, int c, int collum, int setturn) { // makes the scanner standable aginst null answers and creates the Scanner
+        if(collum != c){
+
+        }
+         else if (row != c) {
+                //לראות איך עושים get and set
+
+         } 
+         
+         return setturn;
+        }
+
+public static void setrow(Random r) {
 int row = r.nextInt(2);
-return row;
+       
 
 }
-public static int setcol(Random r) {
-int colnum = r.nextInt(2);
-return colnum;
+
+public void setcol(Random r) {
+int collum = r.nextInt(2);
 }
 
 public static int setturn(int i) {
-        return 0;
-}    
-        }
+    return 0;
+}
+
+}
+

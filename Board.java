@@ -1,6 +1,10 @@
-public class Board{
-    private int[][] board;
 
+import java.util.Scanner;
+public class Board{
+    Scanner s = new Scanner(System.in);
+            int rowinput = s.nextInt();
+            int colinput = s.nextInt();
+    private int[][] board;
     public Board(){
         // create a new board
         this.board = new int[3][3];
@@ -12,9 +16,7 @@ public class Board{
     }
 
     public boolean isavalable(int x, int y, int value){
-        this.board[x][y] = 0;
         if (this.board[x][y] == 0) {
-        System.out.println("You can't put an X there because the spot is already taken.");
         return true;
          }
          else {
@@ -27,7 +29,9 @@ public class Board{
             this.board[x][y] = value;
         }
         else {
-            setCoordinate (x,y, value);
+            Scanner s = new Scanner(System.in);
+            String rowinput = s.nextLine();
+            String colinput = s.nextLine();   
         }
   }
 

@@ -1,11 +1,13 @@
 import java.util.Scanner;
 /*
- * 
+ * ליצור קלט לבוט ולשחקן אצל כל אחד בנפרד
  *TODO:  
  * 
 */
 public class Player {
    public  Scanner scanner; // creates a Scanner
+   String rowinput = scanner.next();
+   String colinput = scanner.next();
     public static String name; // Creates a public String name
 
     public Player() {
@@ -20,12 +22,22 @@ public class Player {
         prompt(c);
         scanner = new Scanner(System.in);
         if(scanner != null){
-            return scanner.nextLine();
+            return scanner.next(rowinput);
+
         }
-        else{
-            return "";
-        }
+         else if (scanner != null) {
+                return scanner.next(colinput);
+
+         } 
+         
+         else {
+                return "";
+         }
+        
+
     }
+
+
 
 
 
