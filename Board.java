@@ -1,15 +1,15 @@
 
 import java.util.Scanner;
 public class Board{
-    Scanner s = new Scanner(System.in);
-            int rowinput = s.nextInt();
-            int colinput = s.nextInt();
+
+  public int size;                 
     private int[][] board;
-    public Board(){
+    public Board(int size){
+        this.size = size;
         // create a new board
-        this.board = new int[3][3];
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
+        this.board = new int[size][size];
+        for(int i = 0; i < size; i++){
+            for(int j = 0; j < size; j++){
                 this.board[i][j] = 0;
             }
         }
@@ -40,8 +40,9 @@ public class Board{
 
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
+
+        for(int i = 0; i < size; i++){
+            for(int j = 0; j < size; j++){
                 sb.append("[");
                 switch(this.board[i][j]){
                     case 0: sb.append(" ");

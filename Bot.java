@@ -1,7 +1,6 @@
         
 import java.util.Random;
 public class Bot extends Player {
-
         Random r = new Random();
 
 public static int bottext(int c1){ // Shows the chat choises the bot makes with the players choises.
@@ -51,7 +50,7 @@ public int auto(int i){ // creates the narroators choises of senteses
 
     public int getbotrInput(int row, int c, int collum, int setturn) { // makes the scanner standable aginst null answers and creates the Scanner
         if(collum != c){
-
+        
         }
          else if (row != c) {
                 //לראות איך עושים get and set
@@ -61,14 +60,14 @@ public int auto(int i){ // creates the narroators choises of senteses
          return setturn;
         }
 
-public static void setrow(Random r) {
-int row = r.nextInt(2);
+public static void setrow(Random r, int size) {
+int row = r.nextInt(size);
        
 
 }
 
-public void setcol(Random r) {
-int collum = r.nextInt(2);
+public void setcol(Random r, int size) {
+int collum = r.nextInt(size);
 }
 
 public static int setturn(int i) {

@@ -2,7 +2,14 @@ import java.util.Scanner;
 /*
  * ליצור קלט לבוט ולשחקן אצל כל אחד בנפרד
  *TODO:  
- * 
+pass scanner to PlayerTester
+ *  based on that:
+ *   Player.prompt(4);
+ *   int size = s.nextInt();            
+     Board b = new Board(size);
+     b.setCoordinate(1, 2, 1);
+     b.setCoordinate(1, 2, 2);
+     System.out.println(b);
 */
 public class Player {
    public  Scanner scanner; // creates a Scanner
@@ -41,7 +48,7 @@ public class Player {
 
 
 
-    public void prompt(int c){ // creates the narroators choises of senteses
+    public static void prompt(int c){ // creates the narroators choises of senteses
         switch(c){
             case 1: System.out.println("Player " + name + ": Enter a row number: ");
                     break;
@@ -49,6 +56,8 @@ public class Player {
                     break;
             case 3: System.out.println("Please Enter your name: ");
                     break;
+            case 4: System.out.println("Enter the size of the board: ");   
+            break;     
             default: System.out.println("Eat a Banana and play again!");
                     break;
 
