@@ -13,8 +13,7 @@ pass scanner to PlayerTester
 */
 public class Player {
    public  Scanner scanner; // creates a Scanner
-   String rowinput = scanner.next();
-   String colinput = scanner.next();
+
     public static String name; // Creates a public String name
 
     public Player() {
@@ -27,12 +26,17 @@ public class Player {
 
     public String getUserInput(int c) { // makes the scanner standable aginst null answers and creates the Scanner
         prompt(c);
+
         scanner = new Scanner(System.in);
         if(scanner != null){
+                String rowinput;
+                
             return scanner.next(rowinput);
 
         }
          else if (scanner != null) {
+                String rowinput;
+                String colinput;
                 return scanner.next(colinput);
 
          } 
@@ -59,7 +63,7 @@ public class Player {
             case 4: System.out.println("Enter the size of the board: ");   
             break;     
             default: System.out.println("Eat a Banana and play again!");
-                    break;
+                break;
 
 
         }

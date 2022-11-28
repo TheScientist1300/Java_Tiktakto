@@ -8,10 +8,21 @@ public class Game extends Player {
     public Board board;
     public Player player;
     public Bot bot;
+    String colinput;
+    String rowinput;
     public static void main(String[] args, int size) {
         boolean flag = true;
         Board board = new Board(size); // create a new board
 
+
+        public boolean isavalable(int x, int y, int value){
+            if (this.board[x][y] == 0) {
+            return true;
+             }
+             else {
+                return false;
+             }
+        }
         
         Player player = new Player(); // create a new player with mark "X"
         Bot bot = new Bot("Bot"); // create a new player with mark "O"
@@ -41,7 +52,7 @@ public class Game extends Player {
             int colInt = Integer.parseInt(col); // convert col to int
             board.setCoordinate(rowInt, colInt, symbol); // set the coordinate to the board
 
-         //   int botrow = bot.getbotrInput();
+          //  int botrow = bot.getbotrInput();
             int botcol = bot.auto(2);
             int bcolnum = Bot.setturn(2);
             int brow = Bot.setturn(2);

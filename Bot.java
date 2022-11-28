@@ -30,6 +30,7 @@ name = "Bot";
 }    
 
 
+
 public int auto(int i){ // creates the narroators choises of senteses
         switch(i){
             case 1: System.out.println("The bot chooses a row number...");
@@ -43,22 +44,13 @@ public int auto(int i){ // creates the narroators choises of senteses
 
         }
         return i;
-            
-        
+
 
     }   
+    public boolean botplay(int row, int collum) {
 
-    public int getbotrInput(int row, int c, int collum, int setturn) { // makes the scanner standable aginst null answers and creates the Scanner
-        if(collum != c){
-        
-        }
-         else if (row != c) {
-                //לראות איך עושים get and set
 
-         } 
-         
-         return setturn;
-        }
+    }
 
 public static void setrow(Random r, int size) {
 int row = r.nextInt(size);

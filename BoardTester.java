@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BoardTester {
+public abstract class BoardTester {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         Player.prompt(4);
